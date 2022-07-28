@@ -1,8 +1,8 @@
 public class DecimalComparator {
 
     public static boolean areEqualByThreeDecimalPlaces(double a, double b) {
-        float checkNumber1 = (float) (a * 100);
-        float checkNumber2 = (float) (b * 100);
+        int checkNumber1 = (int) (a * 1000);
+        int checkNumber2 = (int) (b * 1000);
         if (checkNumber1 - checkNumber2 == 0) {
             System.out.println("thrue, " + a + ", " + b);
             return true;
